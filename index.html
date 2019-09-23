@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EZ Exporter Helper</title>
+</head>
+<body>
+
+  <form onsubmit="return doToEditorSubmit()">
+    <h3>To editor</h3>
+    <p><input type="text" name="separator" placeholder="Insert separator here, for example: else" /></p>
+    <p><textarea name="to-editor-text" style="width:400px; height:300px; line-height: 1.5;" placeholder="Insert text here"></textarea></p>
+    <p><input type="submit" value="Get"></p>
+  </form>
+
+  <hr />
+
+
+  <form onsubmit="return doToEZSubmit()">
+    <h3>To EZ</h3>
+    <p><textarea name="to-ez-text" style="width:400px; height:300px; line-height: 1.5;"></textarea></p>
+    <p><input type="submit" value="Get"></p>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
